@@ -1,62 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_withdraw"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_end"
-        android:layout_marginLeft="@dimen/margin_start_end"
-        android:layout_marginTop="@dimen/margin_top"
-        android:layout_marginEnd="@dimen/margin_start_end"
-        android:text="@string/howmuch_withdraw"
-        android:textColor="@color/black_primary"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_28dp"
+        android:layout_marginLeft="@dimen/margin_28dp"
+        android:layout_marginTop="@dimen/margin_top_69dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/text_confirmwithdrawal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_end"
         android:layout_marginLeft="@dimen/margin_start_end"
         android:layout_marginTop="@dimen/margin_25dp"
-        android:text="@string/dollar"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_withdraw" />
-
-    <TextView
-        android:id="@+id/text_withdrawamount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_left"
-        android:layout_marginLeft="@dimen/margin_start_left"
-        android:layout_marginTop="@dimen/margin_top_16dp"
-        android:text="@string/zero"
-        android:textColor="@color/black_secondary"
-        android:textSize="48sp"
+        android:textColor="@color/black_primary"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_withdraw" />
+        app:layout_constraintTop_toBottomOf="@+id/img_back" />
 
-    <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/text_arrivalconfirmation"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_end"
         android:layout_marginLeft="@dimen/margin_start_end"
-        android:layout_marginTop="@dimen/margin_top_34dp"
+        android:layout_marginTop="@dimen/margin_start_end"
         android:layout_marginEnd="@dimen/margin_start_end"
-        app:layout_constraintTop_toBottomOf="@+id/text_withdrawamount" />
+        android:textColor="@color/gray_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_confirmwithdrawal" />
 
     <Button
-        android:id="@+id/btn_continue"
+        android:id="@+id/btn_withdrawal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_end"
@@ -64,7 +50,6 @@
         android:layout_marginEnd="@dimen/margin_start_end"
         android:layout_marginBottom="@dimen/margin_start_end"
         android:background="@drawable/layout_bg"
-        android:text="@string/btn_continue"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"

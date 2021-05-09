@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_28dp"
+        android:layout_marginLeft="@dimen/margin_28dp"
+        android:layout_marginTop="@dimen/margin_top_69dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_addcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:text="@string/add_debitcard"
+        android:textColor="@color/black_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_back" />
+
+    <TextView
+        android:id="@+id/text_linkcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/link_debitcard"
+        android:textColor="@color/gray_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_addcard" />
+
+    <TextView
+        android:id="@+id/text_cardnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_start_end"
+        android:text="@string/card_number"
+        android:textColor="@color/gray_secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_linkcard" />
+
+    <EditText
+        android:id="@+id/edit_cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_36dp"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:textColor="@color/black_primary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_cardnumber" />
+
+    <TextView
+        android:id="@+id/text_expirationdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_start_end"
+        android:text="@string/expiration_date"
+        android:textColor="@color/gray_secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_cardnumber" />
+
+    <EditText
+        android:id="@+id/edit_expirationdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_36dp"
+        android:hint="@string/date_format"
+        android:inputType="number"
+        android:maxLength="8"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:textColor="@color/black_primary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_expirationdate" />
+
+    <TextView
+        android:id="@+id/text_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_36dp"
+        android:text="@string/cvv"
+        android:textColor="@color/gray_washed"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_expirationdate" />
+
+    <EditText
+        android:id="@+id/edit_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_36dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:textColor="@color/black_primary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_cvv" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginBottom="@dimen/margin_start_end"
+        android:background="@drawable/layout_bg"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

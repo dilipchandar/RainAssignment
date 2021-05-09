@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">108dp</dimen>
+    <dimen name="margin_start_end">24dp</dimen>
+    <dimen name="margin_start_left">43dp</dimen>
+    <dimen name="margin_top_16dp">16dp</dimen>
+    <dimen name="margin_top_34dp">34dp</dimen>
+    <dimen name="margin_top_69dp">69dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+
+</resources>

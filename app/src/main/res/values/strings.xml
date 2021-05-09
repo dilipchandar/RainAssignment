@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">RainAssignment</string>
+    <string name="howmuch_withdraw">How much do you want to withdraw?</string>
+    <string name="dollar">$</string>
+    <string name="zero">0</string>
+    <string name="btn_continue">Continue</string>
+    <string name="add_debitcard">Add a debit card</string>
+    <string name="link_debitcard">Link a debit card where you would like to receive your money.</string>
+    <string name="card_number">CARD NUMBER</string>
+    <string name="expiration_date">EXPIRATION DATE</string>
+    <string name="cvv">CVV</string>
+    <string name="confirm_withdrawal_amount">Confirm your withdrawal of $</string>
+    <string name="arrival_confirmation">Your money will arrive in your card ending in</string>
+    <string name="withdraw">Withdraw $</string>
+    <string name="card_error">Card number cannot be empty</string>
+    <string name="date_error">Please enter expiry date</string>
+    <string name="cvv_error">CVV cannot be empty</string>
+    <string name="invalid_card">Invalid card number</string>
+    <string name="invalid_expiration_date">Invalid expiration date</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="date_format">DD/MM/YY</string>
 </resources>
